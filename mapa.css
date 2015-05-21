@@ -1,0 +1,301 @@
+path {
+	fill: none;
+	}
+text, tspan, .stanice {
+	stroke: none;
+	}
+/* nastavení tratí globálně*/
+.trat {
+	stroke-width: 1.5px;
+	}
+.obratiste, g.ho, .spojka {
+	stroke-width: 0.7px;
+	}
+g.most {
+	stroke: black !important; 
+	stroke-width: 1px;}
+.kolej, .zkusebni_trat, .zarazedlo.depo, .portal.depo{
+	fill-opacity: 0.5;
+	stroke-opacity: 0.5;
+	}
+.hala {
+	stroke-width: 1px;
+	fill-opacity: 0.1;
+	}
+/*                          TRASA A                     */
+.ia , .spojka.a	{
+	stroke: green;}
+.ia.zarazedlo, .ia.stanice, text.ia, .a.pismeno_trasy	{
+	stroke: none;
+	fill: green;
+	}
+.iia 	{
+	stroke: #84E364;}
+.iia.zarazedlo, .iia.stanice, text.iia	{
+	stroke: none;
+	fill: #84E364;
+	}
+.sh1 {
+	stroke: #79A85E;}
+.sh1.zarazedlo, .sh1.stanice, text.sh1	{
+	stroke: none;
+	fill: #79A85E;
+	}	
+.sh2, .sh_ho {
+	stroke: lime;}
+.sh2.zarazedlo, .sh2.stanice, text.sh2	{
+	stroke: none;
+	fill: lime;
+	}	
+.sr 	{
+	stroke: #A1CF69;}
+.sr.zarazedlo, .sr.stanice, text.sr	{
+	stroke: none;
+	fill: #A1CF69;
+	}	
+.sk 	{stroke: #00FF77;
+	}
+.sk.stanice, text.sk	{
+	stroke: none;
+	fill: #00FF77;
+	}	
+.ho, .trat.sh_ho.hlavni	{
+	stroke: #B7FF00;
+	}
+.zarazedlo.ho, .ho.stanice, text.ho	{
+	stroke: none;
+	fill: #B7FF00;
+	}
+.va 	{stroke: #1EFF00;
+	}
+.va.zarazedlo, .va.stanice, text.va {
+	stroke: none;
+	fill: #1EFF00;
+	}
+.a.depo, .a.depo.portal, .a.zkusebni_trat {
+	stroke: #00C961;
+	}
+.a.hala:not(.ozm), .a.depo.zarazedlo, #text5316 {
+	fill: #00C961;
+	}
+.a.ozm.hala, text.ozm{
+	stroke: #106100;
+	fill: #106100;
+	}
+.a.ozm {
+	stroke: #106100;
+	}
+/*                          TRASA B                */
+.ib , .spojka.b	{
+	stroke: orange;
+	}
+.ib.zarazedlo, .ib.stanice, text.ib, .b.pismeno_trasy	{
+	stroke: none;
+	fill: orange;
+	}
+.iib {
+	stroke: #B58C19;
+	}
+.iib.zarazedlo, .iib.stanice, text.iib	{
+	stroke: none;
+	fill: #B58C19;
+	}
+.iiib {
+	stroke: #FAEA6E;
+	}
+.iiib.zarazedlo, .iiib.stanice, text.iiib	{
+	stroke: none;
+	fill: #FAEA6E;
+	}
+.ivb {
+	stroke: #F2FF00;
+	}
+.ivb.zarazedlo, .ivb.stanice, text.ivb	{
+	stroke: none;
+	fill: #F2FF00;
+	}
+.vb {
+	stroke: #FFCC00;
+	}
+.vb.zarazedlo, .vb.stanice, text.vb	{
+	stroke: none;
+	fill: #FFCC00;
+	}	
+.kl {
+	stroke: #CCFF00;
+	}
+.kl.stanice, text.kl	{
+	stroke: none;
+	fill: #CCFF00;
+	}	
+.hl {
+	stroke: #C9C924;
+	}
+.hl.stanice, text.hl	{
+	stroke: none;
+	fill: #C9C924;
+	}		
+.b.depo.kolej, .b.depo.portal {
+	stroke: #FF9500;
+}
+.b.hala, .b.depo.zarazedlo, #text5320{
+	stroke: #FF9500;
+	fill: #FF9500;
+	}
+.b.hala.depo_zlicin_2 {
+	stroke: #898C24;
+	fill: #898C24;
+	}
+.b.hala.depo_zlicin_3 {
+	stroke: #FF5030;
+	fill: #FF5030;
+	}
+.b.zkusebni_trat {
+	stroke: #FF7700}
+#zarazedlo69 {
+	stroke: none;
+	fill: #FF6A00;
+	}
+/*                    TRASA C                */
+.ic 	{
+	stroke: red;}
+.ic.zarazedlo, .ic.stanice, text.ic, .pismeno_trasy	{
+	stroke: none;
+	fill: red;
+	}
+.trat.ic7 	{
+	stroke: #ff77de;
+	}
+text.ic7	{
+	stroke: none;
+	fill: #ff77de;
+	}
+.iic  {
+	stroke: #FF006A;
+	}
+.iic.zarazedlo, .iic.stanice, text.iic	{
+	stroke: none;
+	fill: #FF006A;
+	}
+.iiic, .spojka.c  {
+	stroke: #B00C00;
+	}
+.iiic.zarazedlo, .iiic.stanice, text.iiic	{
+	stroke: none;
+	fill: #B00C00;
+	}
+.ivc1  {
+	stroke: #FF7300;
+	}
+.ivc1.zarazedlo, .ivc1.stanice, text.ivc1 	{
+	stroke: none;
+	fill: #FF7300;
+	}
+.ivc2 {
+	stroke: #FF00A2;
+	}
+.ivc2.zarazedlo, .ivc2.stanice, text.ivc2	{
+	stroke: none;
+	fill: #FF00A2;
+	}
+.c.zkusebni_trat  {
+	stroke: #D40015;
+	}
+.c.depo, .c.depo.portal{
+	stroke: #D42E00;
+	}
+.c.hala, .c.depo.zarazedlo, #text5324{
+	fill: #D42E00;
+	}
+text {
+	text-anchor: middle;
+	fill: black;
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	stroke-width: 0px;
+	}
+.zkratka {
+	font-size: 80%;
+	opacity: 0.7;
+	}
+tspan.sr, tspan.sk, tspan.ho {
+	font-weight: normal;
+	}
+text.popkv, text.popkm , #text7725, #text7719 {
+	fill: black;
+	stroke: none;
+	text-anchor: start;
+	font-weight: normal;
+	}
+.popkv {
+	fill: #DCEBFF;
+	stroke-width: 0.25px;
+	stroke: black;
+	}
+text.popkm {
+	font-size: 70%;
+	}
+.popkm , #rect6932, #rect6920 {
+	fill: #DCEBFF;
+	stroke-width: 0.25px;
+	stroke: #555;
+	}
+.popkc {
+	stroke: black;
+	stroke-width: 0.25px;
+	}
+path.depo.zarazedlo
+	{stroke: none !important;
+	}
+.tabulka  tspan{
+	font-weight: normal;
+	fill-opacity: 1;
+	fill: black !important;
+	}
+.pismeno_trasy{
+	font-size: 55px;
+	}
+.fr {fill:url(mapa.html/#prechod_fr) !important;}
+.ms {fill:url(mapa.html/#prechod_ms) !important;}
+.mu {fill:url(mapa.html/#prechod_mu) !important;}
+.mo, .pe, .de, .nm, .ze, .sr, .sk, .ho, .zl, .nb, .sn, .fr, .ce, .cm, .lt, .la, .nh, .pp, .kc, .ha
+	{font-weight: bold}
+#vltava {
+	stroke-width: 30px;
+	stroke: #0080FF;
+	}
+#vltava2 {
+	stroke-width: 40px;
+	stroke: white;
+	}
+#titulek {
+	font-size: 100px;
+	text-anchor: start;
+	font-variant: small-caps
+	}
+#podtitul {
+	font-size: 25%;
+	font-variant: normal;
+	text-decoration: overline;
+	}
+#tiraz {
+	text-anchor: start;
+	font-size: 10px;
+	fill: #666;
+	}
+#styl1, #styl2, #styl3 {
+	text-anchor: start;
+	font-size: 16px;
+	text-decoration: underline;
+	fill: #153C9E;}
+#styl1:hover, #styl2:hover, #styl3:hover {
+	text-decoration: none;
+	fill: #2E4172;}
+#styl1, #styl3 {font-weight: normal}
+#styl2 {font-weight: bold;}
+.oddelovac {
+	stroke: white;
+	stroke-width: 8px;
+	}
+#pozadi {
+	fill: white
+	}
