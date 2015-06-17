@@ -1,29 +1,24 @@
 path {
 	fill: none;
 	}
-text, tspan, .stanice {
+text, tspan, .stanice, .zarazedlo {
 	stroke: none;
 	}
-/* nastavení vlastností globálně*/
+/* Nastavení vlastností globálně*/
 .trat {
 	stroke-width: 1.5px;
 	}
 .obratiste, g.ho, .spojka {
 	stroke-width: 0.7px;
 	}
-g.most {
-	stroke: black;
+g.most, .portal {
+	stroke: black !important;
 	stroke-width: 1px;
-	}
-.kolej, .zkusebni_trat, .zarazedlo.depo, .portal.depo{
-	fill-opacity: 0.5;
-	stroke-opacity: 0.5;
 	}
 .hala {
 	stroke-width: 1px;
-	fill-opacity: 0.1;
 	}
-/* lokální nastavení */
+/* Lokální nastavení */
 .a, .ozm {
 	stroke: green;
 	}
@@ -33,7 +28,13 @@ g.most {
 	}
 .a.hala {
 	stroke: green;
-	fill: green;
+	fill: #E5F2E5;
+	}
+.a.kolej.depo, .a.zkusebni_trat_a {
+	stroke: #7FBF7F;
+	}
+.a.zarazedlo.depo {
+	fill: #7FBF7F;
 	}
 .b {
 	stroke: orange;
@@ -44,7 +45,14 @@ g.most {
 	}
 .b.hala {
 	stroke: orange;
-	fill: orange;
+	fill: #FFF6E5;
+	}
+.b.kolej.depo, .b.zkusebni_trat_b {
+	stroke: #FFD27F;
+	}
+.b.zarazedlo.depo, .b.zarazedlo.zkusebni_trat_b {
+	stroke: none;
+	fill: #FFD27F;
 	}
 .c {
 	stroke: red;
@@ -55,7 +63,14 @@ g.most {
 	}
 .c.hala {
 	stroke: red;
-	fill: red;
+	fill: #FFE5E5;
+	}
+.c.kolej.depo, .c.zkusebni_trat_c {
+	stroke: #FF7F7F;
+	}
+.c.zarazedlo.depo, .c.zarazedlo.zkusebni_trat_c {
+	stroke: none;
+	fill: #FF7F7F;
 	}
 text {
 	text-anchor:middle;
@@ -88,17 +103,26 @@ rect.popkm  {
 	stroke-width: 0.25px;
 	}
 .zkratka {
-	font-size: 12.8px;
-	opacity: 0.7;
+	font-size: 80%;
+	filter: brightness(1.3);
+	-webkit-filter: brightness(1.3);
 	}
-.fr {fill:url(mapa.html/#prechod_fr) !important;}
-.ms {fill:url(mapa.html/#prechod_ms) !important;}
-.mu {fill:url(mapa.html/#prechod_mu) !important;}
+.fr {
+	fill:url(mapa.html/#prechod_fr) !important;
+	}
+.ms {
+	fill:url(mapa.html/#prechod_ms) !important;
+	}
+.mu {
+	fill:url(mapa.html/#prechod_mu) !important;
+	}
 .mo, .pe, .de, .nm, .ze, .sr, .sk, .ho, .zl, .nb, .sn, .fr, .ce, .cm, .lt, .la, .nh, .pp, .kc, .ha
-	{font-weight: bold}
+	{
+	font-weight: bold;
+	}
 .tabulka tspan{
 	font-weight: normal;
-	fill-opacity: 1;
+	cursor: pointer;
 	}
 .pismeno_trasy{
 	font-size: 55px;
@@ -124,17 +148,8 @@ rect.popkm  {
 #tiraz {
 	text-anchor:start;
 	font-size: 10px;
-	fill: #666;}
-#styl1, #styl2, #styl3 {
-	text-anchor: start;
-	font-size: 16px;
-	text-decoration: underline;
-	fill: #153C9E;}
-#styl1:hover, #styl2:hover, #styl3:hover {
-	text-decoration: none;
-	fill: #2E4172;}
-#styl2, #styl3 {font-weight: normal}
-#styl1 {font-weight: bold;}
+	fill: #666;
+	}
 .oddelovac {
 	stroke: white;
 	stroke-width: 8px;
