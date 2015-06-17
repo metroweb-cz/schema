@@ -1,6 +1,6 @@
 @import 'mapa2.css';
 /* 1971 */
-.c.zkusebni_trat, .popkm.c.zt, #zarazedlo79{
+.c.zkusebni_trat_c, .popkm.c.zkusebni_trat_c, #zarazedlo79 {
     animation-name: historie;
     animation-delay: 0s;
     animation-duration: 1s;
@@ -11,7 +11,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* 1974 */
-.c.depo, .c.depo.portal, .c.hala, .c.depo.zarazedlo, .ic, .ic.zarazedlo, .ic.stanice, text.ic, #oddelovac_ztc, #text5324, #pismenoc1{
+.c.depo, .c.depo.portal, .c.hala, .c.depo.zarazedlo, .ic, .ic.zarazedlo, .ic.stanice, text.ic, #oddelovac_ztc, #text5324, #pismenoc1 {
     animation-name: historie;
     animation-delay: 3s;
     animation-duration: 1s;
@@ -33,7 +33,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* XII.1978 */
-.trat.ic7, text.ic7{
+.trat.ic7, text.ic7 {
     animation-name: historie;
     animation-delay: 9s;
     animation-duration: 1s;
@@ -44,7 +44,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* XI.1980 */
-.iic, .iic.zarazedlo, .iic.stanice, text.iic{
+.iic, .iic.zarazedlo, .iic.stanice, text.iic {
     animation-name: historie;
     animation-delay: 12s;
     animation-duration: 1s;
@@ -55,7 +55,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* XII.1980 */
-.iia, .iia.zarazedlo, .iia.stanice, text.iia{
+.iia, .iia.zarazedlo, .iia.stanice, text.iia {
     animation-name: historie;
     animation-delay: 15s;
     animation-duration: 1s;
@@ -66,7 +66,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* 1984 */
-.iiic, .iiic.zarazedlo, .iiic.stanice, text.iiic{
+.iiic, .iiic.zarazedlo, .iiic.stanice, text.iiic {
     animation-name: historie;
     animation-delay: 18s;
     animation-duration: 1s;
@@ -77,7 +77,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* X.1985 */
-.sh2, .sh_ho, .sh2.zarazedlo, .sh2.stanice, text.sh2, .a.depo, .a.depo.portal, .a.zkusebni_trat, .popkm.a.zt, .a.hala:not(.ozm), .a.depo.zarazedlo, #text5316, #pismenoa2{
+.sh2, text.sh2, .a.depo:not(.ozm), .a.zkusebni_trat_a, .popkm.a.zkusebni_trat_a, .a.hala:not(.ozm), #text5316, #pismenoa2 {
     animation-name: historie;
     animation-delay: 21s;
     animation-duration: 1s;
@@ -88,7 +88,7 @@
    -webkit-animation-fill-mode: both;
 }
 /* XII.1985 */
-.ib , .spojka.c, .spojka.b, .ib.zarazedlo, .ib.stanice, #oddelovac_ms1, #oddelovac_ms2, #oddelovac_frspojkac, text.ib{
+.ib , .spojka.c, .spojka.b, .ib.zarazedlo, .ib.stanice, #oddelovac_ms1, #oddelovac_ms2, #oddelovac_frspojkac, text.ib {
     animation-name: historie;
     animation-delay: 24s;
     animation-duration: 1s;
@@ -99,7 +99,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* 11.VII.1987 */
-.sr, .sr.zarazedlo, .sr.stanice, text.sr{
+.sr, .sr.zarazedlo, .sr.stanice, text.sr {
     animation-name: historie;
     animation-delay: 27s;
     animation-duration: 1s;
@@ -110,7 +110,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* 1.XI.1987 */
-.sh1, .sh1.zarazedlo, .sh1.stanice, text.sh1{
+.sh1, .sh1.zarazedlo, .sh1.stanice, text.sh1 {
     animation-name: historie;
     animation-delay: 30s;
     animation-duration: 1s;
@@ -121,7 +121,7 @@
    -webkit-animation-fill-mode: both;
 }
 /* 1988 */
-.iiib, .iiib.zarazedlo, .iiib.stanice, text.iiib{
+.iiib, .iiib.zarazedlo, .iiib.stanice, text.iiib {
     animation-name: historie;
     animation-delay: 33s;
     animation-duration: 1s;
@@ -132,7 +132,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* VII.1990 */
-.sk, .sk.stanice, text.sk{
+.sk, .sk.stanice, text.sk {
     animation-name: historie;
     animation-delay: 36s;
     animation-duration: 1s;
@@ -143,7 +143,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* XII.1990 */
-.iib,.iib.zarazedlo, .iib.stanice, text.iib{
+.iib,.iib.zarazedlo, .iib.stanice, text.iib {
     animation-name: historie;
     animation-delay: 39s;
     animation-duration: 1s;
@@ -154,7 +154,7 @@
     -webkit-animation-fill-mode: both;
 }
 /* 1993 */
-.a.ozm{
+.a.ozm {
     animation-name: historie;
     animation-delay: 42s;
     animation-duration: 1s;
@@ -166,7 +166,7 @@
 }
 /* 1994 */
 .b.depo.kolej, .b.depo.portal, .b.hala:not(.depo_zlicin_2):not(.depo_zlicin_3), .b.depo.zarazedlo, .vb, .vb.zarazedlo, .vb.stanice, .popkm.b.depo,
-text.vb, #text5320, #pismenob1{
+text.vb, #text5320, #pismenob1 {
     animation-name: historie;
     animation-delay: 45s;
     animation-duration: 1s;
@@ -177,7 +177,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* 1998 */
-.ivb, .ivb.zarazedlo, .ivb.stanice, text.ivb, #pismenob2{
+.ivb, .ivb.zarazedlo, .ivb.stanice, text.ivb, #pismenob2 {
     animation-name: historie;
     animation-delay: 48s;
     animation-duration: 1s;
@@ -188,7 +188,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* I.1999 */
-.popkm.b.zt, .b.zkusebni_trat, #oddelovac_ztb{
+.popkm.b.zkusebni_trat_b, .b.zkusebni_trat_b, #oddelovac_ztb {
     animation-name: historie;
     animation-delay: 51s;
     animation-duration: 1s;
@@ -199,7 +199,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;   
 }
 /* X.1999 */
-.hl, .hl.stanice, text.hl{
+.hl, .hl.stanice, text.hl {
     animation-name: historie;
     animation-delay: 54s;
     animation-duration: 1s;
@@ -210,7 +210,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* 2000 */
-.depo_zlicin_2{
+.depo_zlicin_2 {
     animation-name: historie;
     animation-delay: 57s;
     animation-duration: 1s;
@@ -221,7 +221,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* VI.2001 */
-.depo_zlicin_3{
+.depo_zlicin_3 {
     animation-name: historie;
     animation-delay: 60s;
     animation-duration: 1s;
@@ -232,7 +232,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* VII.2001 */
-.kl, .kl.stanice, text.kl{
+.kl, .kl.stanice, text.kl {
     animation-name: historie;
     animation-delay: 63s;
     animation-duration: 1s;
@@ -243,7 +243,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* 2004 */
-.ivc1, .ivc1.zarazedlo, .ivc1.stanice, text.ivc1{
+.ivc1, .ivc1.zarazedlo, .ivc1.stanice, text.ivc1 {
     animation-name: historie;
     animation-delay: 66s;
     animation-duration: 1s;
@@ -254,7 +254,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* 2006 */
-.ho, .trat.sh_ho.hlavni, .zarazedlo.ho, .ho.stanice, text.ho{
+.ho, .zarazedlo.ho, .ho.stanice, text.ho {
     animation-name: historie;
     animation-delay: 69s;
     animation-duration: 1s;
@@ -265,7 +265,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* 2008 */
-.ivc2, .ivc2.zarazedlo, .ivc2.stanice, text.ivc2, #pismenoc2{
+.ivc2, .ivc2.zarazedlo, .ivc2.stanice, text.ivc2, #pismenoc2 {
     animation-name: historie;
     animation-delay: 72s;
     animation-duration: 1s;
@@ -276,7 +276,7 @@ text.vb, #text5320, #pismenob1{
     -webkit-animation-fill-mode: both;
 }
 /* 2015 */
-.va, .va.zarazedlo, .va.stanice, text.va{
+.va, .va.zarazedlo, .va.stanice, text.va {
     animation-name: historie;
     animation-delay: 75s;
     animation-duration: 1s;
@@ -288,21 +288,19 @@ text.vb, #text5320, #pismenob1{
 }
 /* Definice animací */
 @keyframes historie {
-    from{
+    from {
         opacity: 0
     }    
-    to{
+    to {
         opacity: 1
     }
 }
 
 @-webkit-keyframes historie {
-    from{
+    from {
         opacity: 0
     }    
-    to{
+    to {
         opacity: 1
     }
 }
-#styl1, #styl2{font-weight: normal}
-#styl3 {font-weight: bold;}
