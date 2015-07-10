@@ -1,3 +1,6 @@
+svg {
+	shape-rendering: geometricPrecision;
+	}
 path {
 	fill: none;
 	}
@@ -11,9 +14,10 @@ text, tspan, .stanice, .zarazedlo {
 .obratiste, g.ho, .spojka {
 	stroke-width: 0.7px;
 	}
-g.most, .portal {
-	stroke: black !important;
+.most.most, .portal.portal {
+	stroke: black;
 	stroke-width: 1px;
+	stroke-dasharray: none;
 	}
 .hala {
 	stroke-width: 1px;
@@ -30,10 +34,10 @@ g.most, .portal {
 	stroke: green;
 	fill: #E5F2E5;
 	}
-.a.kolej.depo, .a.zkusebni_trat_a {
+.a.kolej, .zkusebni_trat_a {
 	stroke: #7FBF7F;
 	}
-.a.zarazedlo.depo {
+.depo_hostivar.zarazedlo, .ozm.zarazedlo {
 	fill: #7FBF7F;
 	}
 .b {
@@ -47,10 +51,10 @@ g.most, .portal {
 	stroke: orange;
 	fill: #FFF6E5;
 	}
-.b.kolej.depo, .b.zkusebni_trat_b {
+.b.kolej, .zkusebni_trat_b {
 	stroke: #FFD27F;
 	}
-.b.zarazedlo.depo, .b.zarazedlo.zkusebni_trat_b {
+[class*=depo].zarazedlo.b, .zkusebni_trat_b.zarazedlo {
 	stroke: none;
 	fill: #FFD27F;
 	}
@@ -65,17 +69,29 @@ g.most, .portal {
 	stroke: red;
 	fill: #FFE5E5;
 	}
-.c.kolej.depo, .c.zkusebni_trat_c {
+.depo_kacerov.kolej, .zkusebni_trat_c, .vlecka_c {
 	stroke: #FF7F7F;
 	}
-.c.zarazedlo.depo, .c.zarazedlo.zkusebni_trat_c {
+.depo_kacerov.zarazedlo, .zkusebni_trat_c.zarazedlo{
+	stroke: none;
+	fill: #FF7F7F;
+	}
+.bezproudu {
+	stroke-dasharray: 4,2.5;
+	}
+.legenda, .legenda:hover {
+	stroke: black;
+	text-decoration: none;
+	cursor: auto;
+	}
+.vlecka_c.zarazedlo {
 	stroke: none;
 	fill: #FF7F7F;
 	}
 text {
-	text-anchor:middle;
+	text-anchor: middle;
 	fill: black;
-	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif;
 	stroke-width: 0px;
 	font-size: 16px;
 	}
@@ -83,38 +99,33 @@ text.popkv, text.popkm {
 	fill: black;
 	stroke: none;
 	text-anchor: start;
-	font-weight: normal !important;
+	font-weight: normal;
 	}
 text.popkm {
 	font-size: 11.2px;
 	}
-rect.popkv {
-	fill: #DCEBFF;
-	stroke-width: 0.25px;
-	stroke: black;
-	}
-rect.popkm  {
+rect.popkv, rect.popkm {
 	fill: #DCEBFF;
 	stroke-width: 0.25px;
 	stroke: #555;
-}
+	}
 .popkc {
 	stroke: black;
 	stroke-width: 0.25px;
 	}
 .zkratka {
 	font-size: 80%;
-	filter: brightness(1.3);
-	-webkit-filter: brightness(1.3);
+	filter: saturate(0.5) brightness(1.3);
+	-webkit-filter: saturate(0.5) brightness(1.3);
 	}
-.fr {
-	fill:url(mapa.html/#prechod_fr) !important;
+text.fr.fr {
+	fill:url(#prechod_fr);
 	}
-.ms {
-	fill:url(mapa.html/#prechod_ms) !important;
+text.ms.ms {
+	fill:url(#prechod_ms);
 	}
-.mu {
-	fill:url(mapa.html/#prechod_mu) !important;
+text.mu.mu {
+	fill:url(#prechod_mu);
 	}
 .mo, .pe, .de, .nm, .ze, .sr, .sk, .ho, .zl, .nb, .sn, .fr, .ce, .cm, .lt, .la, .nh, .pp, .kc, .ha
 	{
@@ -131,22 +142,18 @@ rect.popkm  {
 	stroke-width: 30px;
 	stroke: #0080FF;
 	}
-#vltava2 {
-	stroke-width: 40px;
-	stroke: white;
-	}
 #titulek {
 	font-size: 100px;
 	text-anchor: start;
 	font-variant: small-caps;
 	}
 #podtitul {
-	font-size: 25%;
+	font-size: 25px;
 	font-variant: normal;
 	text-decoration: overline;
 	}
 #tiraz {
-	text-anchor:start;
+	text-anchor: start;
 	font-size: 10px;
 	fill: #666;
 	}
