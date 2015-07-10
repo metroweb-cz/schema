@@ -1,19 +1,31 @@
+svg {
+	shape-rendering: geometricPrecision;
+	}
 path {
 	fill: none;
 	}
 text, tspan, .stanice {
 	stroke: none;
 	}
-/* nastavení tratí globálně*/
+/* nastavení tratí globálně */
 .trat {
 	stroke-width: 1.5px;
+	}
+.bezproudu {
+	stroke-dasharray: 4,2.5;
+	}
+.legenda, .legenda:hover {
+	stroke: black;
+	text-decoration: none;
+	cursor: auto;
 	}
 .obratiste, g.ho, .spojka {
 	stroke-width: 0.7px;
 	}
-g.most, .portal {
-	stroke: black !important; 
-	stroke-width: 1px;}
+.most.most, .portal.portal {
+	stroke: black; 
+	stroke-width: 1px;
+	}
 .hala {
 	stroke-width: 1px;
 	}
@@ -25,18 +37,18 @@ g.most, .portal {
 	fill: green;
 	}
 .iia {
-	stroke: #84E364;}
+	stroke: #84e364;}
 .iia.zarazedlo, .iia.stanice, text.iia {
 	stroke: none;
-	fill: #84E364;
+	fill: #84e364;
 	}
-.sh1 {
-	stroke: #79A85E;}
+.sh1, .sh1.obratiste {
+	stroke: #79a85e;}
 .sh1.zarazedlo, .sh1.stanice, text.sh1 {
 	stroke: none;
-	fill: #79A85E;
+	fill: #79a85e;
 	}	
-.sh2, .sh_ho {
+.sh2, .sh_ho, .sh2.obratiste {
 	stroke: lime;}
 .sh2.zarazedlo, .sh2.stanice, text.sh2 {
 	stroke: none;
@@ -44,48 +56,50 @@ g.most, .portal {
 	}	
 .sr {
 	stroke: #00a884;}
-.sr.zarazedlo, .sr.stanice, text.sr {
+.sr.stanice, text.sr {
 	stroke: none;
 	fill: #00a884;
 	}	
-.sk {stroke: #00FF77;
+.sk {stroke: #00ff77;
 	}
 .sk.stanice, text.sk {
 	stroke: none;
-	fill: #00FF77;
+	fill: #00ff77;
 	}	
 .ho, .trat.sh_ho.hlavni {
-	stroke: #B7FF00;
+	stroke: #b7ff00;
 	}
 .zarazedlo.ho, .ho.stanice, text.ho {
 	stroke: none;
-	fill: #B7FF00;
+	fill: #b7ff00;
 	}
-.va {stroke: #1EFF00;
+.va {stroke: #1eff00;
 	}
 .va.zarazedlo, .va.stanice, text.va {
 	stroke: none;
-	fill: #1EFF00;
+	fill: #1eff00;
 	}
-.a.depo, .a.zkusebni_trat_a {
-	stroke: #7FE4B0;
+.depo_hostivar, .zkusebni_trat_a {
+	stroke: #7fe4b0;
 	}
-.a.depo.zarazedlo, #text5316 {
-	fill: #7FE4B0;
+.depo_hostivar.zarazedlo, text.depo_hostivar {
+	stroke: none;
+	fill: #7fe4b0;
 	}
-.a.hala:not(.ozm){
-	fill: #E5F9EF;
-	stroke: #72AB8E;
+.depo_hostivar.hala {
+	fill: #e5f9ef;
+	stroke: #72ab8e;
 	}
-.a.ozm.kolej {
+.ozm.kolej {
 	stroke: #106100;
 	}
-.a.depo.zarazedlo.ozm, text.ozm {
+.ozm.zarazedlo, text.ozm {
+	stroke: none;
 	fill: #106100;
 	}
-.a.ozm.hala{
+.ozm.hala{
 	stroke: #106100;
-	fill: #E5F9EF;
+	fill: #e5f9ef;
 	}
 /*                          TRASA B                */
 .ib, .spojka.b {
@@ -96,88 +110,114 @@ g.most, .portal {
 	fill: orange;
 	}
 .iib {
-	stroke: #B58C19;
+	stroke: #b58c19;
 	}
 .iib.zarazedlo, .iib.stanice, text.iib {
 	stroke: none;
-	fill: #B58C19;
+	fill: #b58c19;
 	}
 .iiib {
-	stroke: #FAEA6E;
+	stroke: #dff900;
 	}
 .iiib.zarazedlo, .iiib.stanice, text.iiib {
 	stroke: none;
-	fill: #FAEA6E;
+	fill: #dff900;
 	}
 .ivb {
-	stroke: #F2FF00;
+	stroke: #f2ff00;
 	}
 .ivb.zarazedlo, .ivb.stanice, text.ivb {
 	stroke: none;
-	fill: #F2FF00;
+	fill: #f2ff00;
 	}
 .vb {
-	stroke: #FFCC00;
+	stroke: #ffcc00;
 	}
 .vb.zarazedlo, .vb.stanice, text.vb {
 	stroke: none;
-	fill: #FFCC00;
+	fill: #ffcc00;
 	}	
 .kl {
-	stroke: #CCFF00;
+	stroke: #ccff00;
 	}
 .kl.stanice, text.kl {
 	stroke: none;
-	fill: #CCFF00;
+	fill: #ccff00;
 	}	
 .hl {
-	stroke: #C9C924;
+	stroke: #c9c924;
 	}
 .hl.stanice, text.hl {
 	stroke: none;
-	fill: #C9C924;
+	fill: #c9c924;
 	}
-.b.depo {
-	stroke: #FFCA7F;
+.depo_zlicin_1 {
+	stroke: #ffca7f;
 	}
-.b.hala.depo_zlicin_1 {
-	stroke: #FF9500;
-	fill: #FFF4E5;
+.depo_zlicin_1.hala {
+	stroke: #ff9500;
+	fill: #fff2e0;
 	}
-.b.hala.depo_zlicin_2 {
-	stroke: #898C24;
-	fill: #F3F3E9;
+.depo_zlicin_2.hala {
+	stroke: #898c24;
+	fill: #f3f3e9;
 	}
-.b.hala.depo_zlicin_3 {
-	stroke: #FF5030;
-	fill: #FFEDEA;
+.depo_zlicin_2 {
+	stroke: #898c24;
 	}
-.b.depo {
-	stroke: #FFCA7F;
+.depo_zlicin_3.hala {
+	stroke: #ff5030;
+	fill: #ffedea;
 	}
-.b.zkusebni_trat_b {
+.depo_zlicin_3.zarazedlo {
+	stroke: none;
+	fill: #ff5030;
+	}
+.depo_zlicin_3 {
+	stroke: #ff5030;
+	}
+.zkusebni_trat_b {
 	stroke: #cf6d4a;
 	}
-.b.zkusebni_trat_b.zarazedlo {
+.depo_nezavisle_trakce_zlicin_1 {
+	stroke: #f05baa;
+	}
+.depo_nezavisle_trakce_zlicin_1.hala {
+	stroke: #f05baa;
+	fill: #ffeaf5;
+	}
+.depo_nezavisle_trakce_zlicin_1.zarazedlo {
+	stroke: none;
+	fill: #f05baa;
+	}
+.depo_nezavisle_trakce_zlicin_2 {
+	stroke: #d0ed18;
+	}
+.depo_nezavisle_trakce_zlicin_2.hala {
+	stroke: #d0ed18;
+	fill: #f8ffcf;
+	}
+.depo_nezavisle_trakce_zlicin_2.zarazedlo {
+	stroke: none;
+	fill: #d0ed18;
+	}
+.zkusebni_trat_b.zarazedlo {
 	stroke: none;
 	fill: #cf6d4a;
 	}
-.b.depo.zarazedlo, #text5320 {
+.depo_zlicin_1.zarazedlo, text.depo_zlicin_1 {
 	stroke: none;
-	fill: #FFCA7F;
-	}
-.b.hala{
-	fill: #FFF4E5;
+	fill: #ffca7f;
 	}
 /*                    TRASA C                */
 .ic {
 	stroke: red;
 	}
-.ic.zarazedlo, .ic.stanice, text.ic, .pismeno_trasy {
+.ic.zarazedlo, .ic.stanice, text.ic, .c.pismeno_trasy {
 	stroke: none;
 	fill: red;
 	}
-.trat.ic7 {
+.ic7 {
 	stroke: #ff77de;
 	}
 text.ic7 {
@@ -185,81 +225,78 @@ text.ic7 {
 	fill: #ff77de;
 	}
 .iic {
-	stroke: #FF006A;
+	stroke: #ff006a;
 	}
 .iic.zarazedlo, .iic.stanice, text.iic {
 	stroke: none;
-	fill: #FF006A;
+	fill: #ff006a;
 	}
-.iiic, .spojka.c {
-	stroke: #B00C00;
+.iiic, .spojka.c.iiic {
+	stroke: #b00c00;
 	}
 .iiic.zarazedlo, .iiic.stanice, text.iiic {
 	stroke: none;
-	fill: #B00C00;
+	fill: #b00c00;
 	}
 .ivc1 {
-	stroke: #FF7300;
+	stroke: #ff7300;
 	}
 .ivc1.zarazedlo, .ivc1.stanice, text.ivc1 {
 	stroke: none;
-	fill: #FF7300;
+	fill: #ff7300;
 	}
 .ivc2 {
-	stroke: #FF00A2;
+	stroke: #ff00a2;
 	}
 .ivc2.zarazedlo, .ivc2.stanice, text.ivc2 {
 	stroke: none;
-	fill: #FF00A2;
+	fill: #ff00a2;
 	}
-.c.zkusebni_trat_c {
-	stroke: #D5081C;
+.zkusebni_trat_c, .vlecka_c {
+	stroke: #e9967f;
 	}
-.c.zkusebni_trat_c.zarazedlo {
+.zkusebni_trat_c.zarazedlo, .vlecka_c.zarazedlo {
 	stroke: none;
-	fill: #D5081C;
+	fill: #e9967f;
 	}
-.c.depo {
-	stroke: #E9967F;
+.depo_kacerov {
+	stroke: #e9967f;
 	}
-.c.depo.zarazedlo, #text5324{
-	fill: #E9967F;
+.depo_kacerov.zarazedlo, text.depo_kacerov{
+	stroke: none;
+	fill: #e9967f;
 	}
-.c.hala {
-	stroke: #D42E00;
-	fill: #FAEAE5;
+.depo_kacerov.hala {
+	stroke: #d42e00;
+	fill: #faeae5;
 	}
 /*                   OSTATNÍ                */
 text {
 	text-anchor: middle;
 	fill: black;
-	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif;
 	stroke-width: 0px;
 	}
 .zkratka {
 	font-size: 80%;
-	filter: brightness(1.3);
 	-webkit-filter: brightness(1.3);
+	filter: brightness(1.3);
 	}
 tspan.sr, tspan.sk, tspan.ho {
 	font-weight: normal;
 	}
-text.popkv, text.popkm , #text7725, #text7719 {
+/* Popisky čísel koleje */
+text.popkv, text.popkm.popkm  {
 	fill: black;
 	stroke: none;
 	text-anchor: start;
 	font-weight: normal;
 	}
-.popkv {
-	fill: #DCEBFF;
-	stroke-width: 0.25px;
-	stroke: black;
-	}
 text.popkm {
 	font-size: 70%;
 	}
-.popkm , #rect6932, #rect6920 {
-	fill: #DCEBFF;
+rect.popkv.popkv, rect.popkm.popkm {
+	fill: #dcebff;
 	stroke-width: 0.25px;
 	stroke: #555;
 	}
@@ -267,32 +304,29 @@ text.popkm {
 	stroke: black;
 	stroke-width: 0.25px;
 	}
-path.depo.zarazedlo
- {stroke: none !important;
-	}
-.tabulka tspan{
+.tabulka tspan {
 	font-weight: normal;
-	fill: black !important;
+	fill: black;
 	cursor: pointer;
 	}
-.pismeno_trasy{
+.pismeno_trasy {
 	font-size: 55px;
 	}
-.fr {
-	fill:url(mapa.html/#prechod_fr) !important;
+text.fr.fr {
+	fill:url(#prechod_fr);
 	}
-.ms {
-	fill:url(mapa.html/#prechod_ms) !important;
+text.ms.ms {
+	fill:url(#prechod_ms);
 	}
-.mu {
-	fill:url(mapa.html/#prechod_mu) !important;
+text.mu.mu {
+	fill:url(#prechod_mu);
 	}
 .mo, .pe, .de, .nm, .ze, .sr, .sk, .ho, .zl, .nb, .sn, .fr, .ce, .cm, .lt, .la, .nh, .pp, .kc, .ha {
 	font-weight: bold;
 	}
 #vltava {
 	stroke-width: 30px;
-	stroke: #0080FF;
+	stroke: #0080ff;
 	}
 #vltava2 {
 	stroke-width: 40px;
