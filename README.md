@@ -2,17 +2,17 @@ Schéma sítě pražského metra
 ===========================
 Toto schéma má reprezentovat kolejovou síť pražského metra k datu platnosti. Odvozené historické mapy nemusí odrážet skutečný stav rozložení kolejí v dané době. 
 
-Schéma pražského metra je navrženo tak, aby se jeho vzhled dal snadno upravovat pomocí CSS a manipulovat pomcí javascriptu. Základní grafická podoba byla vytvořena pomocí Autocadu a upravena v Inkscape.
+Schéma je navrženo tak, aby se jeho vzhled dal snadno upravovat pomocí CSS a manipulovat pomcí Javascriptu. Základní grafická podoba byla vytvořena pomocí Autocadu a upravena v Inkscape.
 
 Soubory
 -------
 - `mapa.html`: Hlavní soubor určený pro prohlížení na webu
-- `mapa1.css`: Základní (třibarevný) stylopis
+- `mapa1.css`: Základní (tříbarevný) stylopis
 - `mapa2.css`: Stylopis s barevným rozdělením provozních úseků
 - `mapa4.css`: Stylopis s animací průběhu otevírání provozních úseků
-- `mapa1.pdf` `mapa2.pdf`: Schemata ve formátu PDF pro tisk na papíry formátů řady »A«
+- `mapa1.pdf` `mapa2.pdf`: Schemata ve formátu PDF pro tisk na papíry řady »A«
 - `jquery.min.js`: JQuery pro správnou funkci prvků interakce
-- `mapa.svg`: Soubor určený pro editaci ve vektorovém editoru nebo samostatné prohlížení. Není interaktivní.
+- `mapa.svg`: Soubor určený pro editaci ve vektorovém editoru nebo samostatné prohlížení, není interaktivní
 
 Instalace
 ---------
