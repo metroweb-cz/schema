@@ -7,15 +7,16 @@ Schéma pražského metra je navrženo tak, aby se jeho vzhled dal snadno upravo
 Soubory
 -------
 - `mapa.html`: Hlavní soubor určený pro prohlížení na webu
-- `mapa.css1`: Základní (třibarevný) stylopis
-- `mapa.css2`: Stylopis s barevným rozdělením provozních úseků
-- `mapa.css4`: Stylopis s animací průběhu otevírání provozních úseků
+- `mapa1.css`: Základní (třibarevný) stylopis
+- `mapa2.css`: Stylopis s barevným rozdělením provozních úseků
+- `mapa4.css`: Stylopis s animací průběhu otevírání provozních úseků
 - `mapa1.pdf` `mapa2.pdf`: Schemata ve formátu PDF pro tisk na papíry formátů řady »A«
 - `jquery.min.js`: JQuery pro správnou funkci prvků interakce
+- `mapa.svg`: Soubor určený pro editaci ve vektorovém editoru nebo samostatné prohlížení. Není interaktivní.
 
 Instalace
 ---------
-Všechny výše uvedené soubory umístěte do jedné složky.
+Všechny výše uvedené soubory (mimo `mapa.svg`) umístěte do jedné složky.
 
 ### CSS třídy použité v mapě
 - Vše související s tratěmi: `.a` `.b` `.c`
