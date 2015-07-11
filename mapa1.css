@@ -7,9 +7,17 @@ path {
 text, tspan, .stanice, .zarazedlo {
 	stroke: none;
 	}
-/* Nastavení vlastností globálně*/
+/* Nastavení tratí globálně */
 .trat {
 	stroke-width: 1.5px;
+	}
+.bezproudu {
+	stroke-dasharray: 4,2.5;
+	}
+.legenda, .legenda:hover {
+	stroke: black;
+	text-decoration: none;
+	cursor: auto;
 	}
 .obratiste, g.ho, .spojka {
 	stroke-width: 0.7px;
@@ -32,13 +40,13 @@ text, tspan, .stanice, .zarazedlo {
 	}
 .a.hala {
 	stroke: green;
-	fill: #E5F2E5;
+	fill: #e5f2e5;
 	}
 .a.kolej, .zkusebni_trat_a {
-	stroke: #7FBF7F;
+	stroke: #7fbf7f;
 	}
 .depo_hostivar.zarazedlo, .ozm.zarazedlo {
-	fill: #7FBF7F;
+	fill: #7fbf7f;
 	}
 .b {
 	stroke: orange;
@@ -49,14 +57,14 @@ text, tspan, .stanice, .zarazedlo {
 	}
 .b.hala {
 	stroke: orange;
-	fill: #FFF6E5;
+	fill: #fff6e5;
 	}
 .b.kolej, .zkusebni_trat_b {
-	stroke: #FFD27F;
+	stroke: #ffd27f;
 	}
 [class*=depo].zarazedlo.b, .zkusebni_trat_b.zarazedlo {
 	stroke: none;
-	fill: #FFD27F;
+	fill: #ffd27f;
 	}
 .c {
 	stroke: red;
@@ -67,27 +75,20 @@ text, tspan, .stanice, .zarazedlo {
 	}
 .c.hala {
 	stroke: red;
-	fill: #FFE5E5;
+	fill: #ffe5e5;
 	}
 .depo_kacerov.kolej, .zkusebni_trat_c, .vlecka_c {
-	stroke: #FF7F7F;
+	stroke: #ff7f7f;
 	}
 .depo_kacerov.zarazedlo, .zkusebni_trat_c.zarazedlo{
 	stroke: none;
-	fill: #FF7F7F;
-	}
-.bezproudu {
-	stroke-dasharray: 4,2.5;
-	}
-.legenda, .legenda:hover {
-	stroke: black;
-	text-decoration: none;
-	cursor: auto;
+	fill: #ff7f7f;
 	}
 .vlecka_c.zarazedlo {
 	stroke: none;
-	fill: #FF7F7F;
+	fill: #ff7f7f;
 	}
+/*                   OSTATNÍ                */
 text {
 	text-anchor: middle;
 	fill: black;
@@ -95,6 +96,7 @@ text {
 	stroke-width: 0px;
 	font-size: 16px;
 	}
+/* Popisky čísel koleje */
 text.popkv, text.popkm {
 	fill: black;
 	stroke: none;
@@ -105,7 +107,7 @@ text.popkm {
 	font-size: 11.2px;
 	}
 rect.popkv, rect.popkm {
-	fill: #DCEBFF;
+	fill: #dcebff;
 	stroke-width: 0.25px;
 	stroke: #555;
 	}
@@ -127,12 +129,12 @@ text.ms.ms {
 text.mu.mu {
 	fill:url(#prechod_mu);
 	}
-.mo, .pe, .de, .nm, .ze, .sr, .sk, .ho, .zl, .nb, .sn, .fr, .ce, .cm, .lt, .la, .nh, .pp, .kc, .ha
-	{
+.mo, .pe, .de, .nm, .ze, .sr, .sk, .ho, .zl, .nb, .sn, .fr, .ce, .cm, .lt, .la, .nh, .pp, .kc, .ha {
 	font-weight: bold;
 	}
-.tabulka tspan{
+.tabulka tspan {
 	font-weight: normal;
+	fill: black;
 	cursor: pointer;
 	}
 .pismeno_trasy{
