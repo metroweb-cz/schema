@@ -6,13 +6,13 @@ Schéma je navrženo tak, aby se jeho vzhled dal snadno upravovat pomocí CSS a 
 
 Soubory
 -------
-- `[mapa.html](mapa.html)`: Hlavní soubor určený pro prohlížení na webu
+- [`mapa.html`](mapa.html): Hlavní soubor určený pro prohlížení na webu
 - `mapa1.css`: Základní (tříbarevný) stylopis
 - `mapa2.css`: Stylopis s barevným rozdělením provozních úseků
 - `mapa4.css`: Stylopis s animací průběhu otevírání provozních úseků
-- `[mapa1.pdf](mapa1.pdf)` `[mapa2.pdf](mapa2.pdf)`: Schemata ve formátu PDF pro tisk na papíry řady »A«
+- [`mapa1.pdf`](mapa1.pdf), [mapa2.pdf](mapa2.pdf): Schemata ve formátu PDF pro tisk na papíry řady »A«
 - `jquery.min.js`: JQuery pro správnou funkci prvků interakce
-- `[mapa.svg](mapa.svg)`: Soubor určený pro editaci ve vektorovém editoru nebo samostatné prohlížení, není interaktivní
+- [`mapa.svg`](mapa.svg): Soubor určený pro editaci ve vektorovém editoru nebo samostatné prohlížení, není interaktivní
 
 Instalace
 ---------
